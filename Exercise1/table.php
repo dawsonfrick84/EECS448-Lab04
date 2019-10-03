@@ -18,10 +18,6 @@
    </style>
    <body>
      <h1>Multiplication Table</h1>
-
-
-
-
    ";
 
    for($i=0; $i<=100; $i++){
