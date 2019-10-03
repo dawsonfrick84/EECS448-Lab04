@@ -15,38 +15,39 @@
       background-color: #ccffff;
       text-size: 3;
       }
+      td {
+        align: 'right';
+      }
    </style>
    <body>
      <h1>Multiplication Table</h1>
+   <table cellspacing='7.5'>
    ";
 
    for($i=0; $i<=100; $i++){
-     echo"<p><pre>";
+     echo"<p><tr>";
      for($j=0; $j<=100; $j++){
        if($i==0){
          if($j==0){
-           echo "      ";
+           echo "<th align='right'></th>";
          }
          else{
-           if($j>=100){echo "  $j ";}
-           elseif($j>=10){echo "   $j ";}
-           else{echo "    $j ";}
+           if($j>=100){echo "<th align='right'> $j </th>";}
+           elseif($j>=10){echo "<th align='right'> $j </th>";}
+           else{echo "<th align='right'> $j </th>";}
          }
        }
        else{
          if($j==0){
-           echo "    $i ";
+           echo "<th align='right'> $i </th>";
          }
          else{
-           if(multiply($i, $j)>=10000){echo "" . multiply($i, $j) . " ";}
-           elseif(multiply($i, $j)>=1000){echo " " . multiply($i, $j) . " ";}
-           elseif(multiply($i, $j)>=100){echo "  " . multiply($i, $j) . " ";}
-           elseif(multiply($i, $j)>=10){echo "   " . multiply($i, $j) . " ";}
-           else{echo "    " . multiply($i, $j) . " ";}
+           echo "<td align='right'> " . multiply($i, $j) . " </td>";
          }
        }
 
      }
-     echo"</pre></p>";
+     echo"</tr></p>";
    }
+   echo"</table>";
    ?>
