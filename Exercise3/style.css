@@ -1,0 +1,16 @@
+body{
+  font-family: "Arial";
+}
+p {
+  border-bottom: 2px solid black;
+}
+figure {
+  float: left;
+  width: 25%;
+}
+.clear {
+  clear: both;
+}
+.item {
+  border: 5px solid black;
+}
