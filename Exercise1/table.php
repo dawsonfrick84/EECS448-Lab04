@@ -18,6 +18,11 @@
       td {
         align: 'right';
       }
+      table, th, td {
+        border: 1px solid black;
+        padding: 2px;
+        border-collapse: collapse;
+      }
    </style>
    <body>
      <h1>Multiplication Table</h1>
