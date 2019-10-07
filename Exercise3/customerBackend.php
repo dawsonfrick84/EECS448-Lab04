@@ -77,7 +77,7 @@
     echo"<td>" . $q6 . "</td>";
     echo"<td>$49,999.99</td>";
     echo"<td>&nbsp&nbsp&nbsp" . $q6*49999.99 . "</td>";
-    $cost=$cost+$q5*49999.99;
+    $cost=$cost+$q6*49999.99;
   }
 
   echo"<tr><th>Shipping</th>";
